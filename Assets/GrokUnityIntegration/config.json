@@ -1,0 +1,6 @@
+{
+  "Role": "user",
+  "Content": "Hy There",
+  "model": "mixtral-8x7b-32768",
+  "systemInstruction": ""
+}
