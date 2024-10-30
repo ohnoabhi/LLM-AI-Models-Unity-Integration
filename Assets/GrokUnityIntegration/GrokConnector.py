@@ -1,26 +1,3 @@
-
-# import os
-# from groq import Groq
-
-# def get_chat_response():
-#     client = Groq(
-#         api_key="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",
-#     )
-
-#     chat_completion = client.chat.completions.create(
-#         messages=[
-#             {
-#                 "role": "user",
-#                 "content": "Explain the importance of fast language models",
-#             }
-#         ],
-#         model="llama3-8b-8192",
-#     )
-    
-#     return chat_completion.choices[0].message.content
-
-#==========================================================================================
-
 import json
 from groq import Groq  
 def get_chat_response():
@@ -38,7 +15,7 @@ def get_chat_response():
 
                 {
                     "role": "system",
-                    "content": "Address me as my lord when replying"
+                    "content": "Address me as my lord when replying" # TODO : Update here with ur personalisations for the LLM
                 },
                 {
                     "role": config['Role'],       # Make sure 'Role' exists in config
@@ -46,7 +23,6 @@ def get_chat_response():
                 }
             ],
             model=config['model'],
-            #model="llama3-8b-8192",
 
         )
         
