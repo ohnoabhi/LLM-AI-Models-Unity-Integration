@@ -1,6 +1,6 @@
 {
   "Role": "user",
-  "Content": "Hy There",
-  "model": "mixtral-8x7b-32768",
+  "Content": "sup",
+  "model": "gemma2-9b-it",
   "systemInstruction": ""
 }

@@ -23,7 +23,7 @@ public class GrokInputJson
         
         UnityEngine.Debug.Log(JsonConvert.SerializeObject(config));
         string json = JsonConvert.SerializeObject(config, Formatting.Indented);
-        File.WriteAllText("Assets/GrokUnityIntegration/config.json", json);
+        File.WriteAllText(PATHVARIABLES.CONFIG_PATH, json);
     }
 }
 

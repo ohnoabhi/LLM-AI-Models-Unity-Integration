@@ -26,7 +26,7 @@ from groq import Groq
 def get_chat_response():
     try:
         # Load configuration from JSON file
-        with open('Assets/GrokUnityIntegration/config.json') as json_file:
+        with open(r'D:\UnityProjects\AI-Integrations_Git\LLM-AI-Models-Unity-Integration\AI-Integrations\Assets\GrokUnityIntegration\config.json') as json_file:
             config = json.load(json_file)
 
         # Initialize Groq client
