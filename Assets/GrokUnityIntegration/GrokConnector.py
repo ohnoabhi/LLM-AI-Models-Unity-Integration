@@ -7,7 +7,9 @@ def get_chat_response():
             config = json.load(json_file)
 
         # Initialize Groq client
-        client = Groq(api_key="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")
+        
+
+        client = Groq(api_key="---UR API KEY HERE ---") #TODO:add APIKEY from Groq here
         
         # Create chat completion request
         chat_completion = client.chat.completions.create(
